@@ -4,10 +4,11 @@ int main() {
     using namespace std;
     string input;
 
-    int *p1 = NULL;
-    int *p2 = NULL;
-    int *p3 = NULL;
+    int *p1 = nullptr;
+    int *p2 = nullptr;
+    int *p3 = nullptr;
 
+    //Try to get inputs until valid input is given
     while (true) {
         try {
             cout << "Input integer #1: " << endl;
@@ -45,6 +46,7 @@ int main() {
         }
     }
 
+    //Output pointers and integers
     cout << p1 << endl;
     cout << *p1 << endl;
     cout << p2 << endl;
@@ -52,6 +54,7 @@ int main() {
     cout << p3 << endl;
     cout << *p3 << endl;
 
+    //Delete pointers
     delete p1;
     delete p2;
     delete p3;
